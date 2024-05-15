@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Supermarket</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fedd83;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 20px auto;
+        }
+
+        .product-container {
+            width: 200px;
+            height: 320px;
+
+            margin: 40px 40px 40px 40px;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 10px;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .product-details {
+            text-align: center;
+        }
+
+        .add-to-cart {
+            padding: 5px 10px;
+            background-color: #c497db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .add-to-cart:hover {
+            background-color: #45a049;
+        }
+
+        header {
+            background-color: #9e8400;
+
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        
+        .search-bar {
+            flex: 1;
+            text-align: right;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 5px;
+            width: 200px;
+        }
+
+        .view-cart-button {
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-right: 10px;
+        }
+
+        .view-cart-button:hover {
+            background-color: #45a049;
+        }
+
+        .category-nav {
+            background-color: #ae29c2;
+            color: #fff;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+
+        .category-nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex: 1;
+            justify-content: space-evenly; 
+        }
+
+        .category-nav ul li {
+            margin: 0 10px;
+        }
+
+        .category-nav ul li:last-child {
+            border-right: none; /* Remove border from the last item */
+        }
+
+        .category-nav ul li a {
+            color: #fff;
+            margin-right: 5px;
+            text-decoration: none;
+        }
+
+        .category-nav ul li:hover {
+            background-color: rgba(255, 255, 255, 0.1); /* Faded background color on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>locuscorner-DEPARTMENTAL STORE</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="SEARCH ITEM">
+            <button class="view-cart-button">View Cart</button>
+        </div>
+    </header>
+    <div class="category-nav">
+        <ul>
+            <li><a href="mainpage.html">Toys</a></li>
+            <li><a href="fruits.html">Chains</a></li>
+            <li style="background-color: #ae29c2; padding: 10px; border: solid 1px;"><a href="snack.html">Rings</a></li>
+            <li><a href="nonveg.html">valentine Gift</a></li>
+            <li><a href="household.html">Teddy Bear</a></li>
+            <li><a href="stationary.html">Showcase</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="product-container">
+            <div>
+                <img class="product-image" src="menring1.jpeg" alt="Chips">
+            </div>
+            <div class="product-details">
+                <p>Ring-28</p>
+                <p>Rs. 400</p>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-container">
+            <div>
+                <img class="product-image" src="womenring1.jpeg" alt="Popcorn">
+            </div>
+            <div class="product-details">
+                <p>Ring-18</p>
+                <p>Rs. 450</p>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-container">
+            <div>
+                <img class="product-image" src="menring2.jpeg" alt="Pretzel">
+            </div>
+            <div class="product-details">
+                <p>Ring-26</p>
+                <p>Rs. 80</p>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-container">
+            <div>
+                <img class="product-image" src="womenring2.jpeg" alt="Crackers">
+            </div>
+            <div class="product-details">
+                <p>Ring</p>
+                <p>Rs. 600</p>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-container">
+            <div >
+                <img class="product-image" src="menring3.jpeg" alt="Nuts">
+            </div>
+            <div class="product-details">
+                <p>Ring-24</p>
+                <p>Rs. 399</p>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+       
+    </div>
+    <div class="container">
+        <div class="product-container">
+            <div >
+                <img class="product-image" src="womenring3.jpeg" alt="Cookies">
+            </div>
+            <div class="product-details">
+                <p>Ring-18</p>
+                <p>Rs. 950</p>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-container">
+            <div >
+                <img class="product-image" src="menring4.avif" alt="Chocolates">
+            </div>
+            <div class="product-details">
+                <p>Ring-30</p>
+                <p>Rs. 550</p>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-container">
+            <div >
+                <img class="product-image" src="womenring4.jpeg" alt="Cupcakes">
+            </div>
+            <div class="product-details">
+                <p>Ring-20</p>
+                <p>Rs. 499</p>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+
+        
+        <div class="product-container">
+            <div >
+                <img class="product-image" src="menring5.jpeg" alt="Pretzel">
+            </div>
+            <div class="product-details">
+                <p>Ring-32</p>
+                <p>Rs. 750</p>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-container">
+            <div >
+                <img class="product-image" src="womenring5.jpeg" alt="Cookies">
+            </div>
+            <div class="product-details">
+                <p>Ring-22</p>
+                <p>Rs. 450</p>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+    </div>
+</body>
+</html>
